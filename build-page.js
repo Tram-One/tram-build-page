@@ -16,7 +16,6 @@ module.exports = (options) => {
   const cleanUrl = mockUrl.replace(extraSlashes, '/')
 
   // setup window
-
   const indexFile = fs.readFileSync(path.join(process.cwd(), indexPath)).toString()
   window = domino.createWindow(indexFile, cleanUrl)
   document = window.document
