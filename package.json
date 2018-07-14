@@ -1,0 +1,51 @@
+{
+  "name": "tram-build-page",
+  "version": "1.0.0",
+  "description": "",
+  "bin": "tram-build-page.js",
+  "main": "build-page.js",
+  "scripts": {
+    "lint": "xo",
+    "test": "npm run server-test && npm run cli-test",
+    "server-test": "jasmine specs/api-spec.js",
+    "cli-test": "jasmine specs/cli-spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tram-One/tram-build-page.git"
+  },
+  "keywords": [
+    "tram-one",
+    "server"
+  ],
+  "author": {
+    "name": "Jesse Jurman",
+    "email": "j.r.jurman@gmail.com",
+    "url": "https://github.com/jrjurman"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tram-One/tram-build-page/issues"
+  },
+  "homepage": "https://github.com/Tram-One/tram-build-page#readme",
+  "dependencies": {
+    "commander": "^2.16.0",
+    "domino": "^2.0.3"
+  },
+  "devDependencies": {
+    "eslint-config-tram-one": "^2.0.0",
+    "jasmine": "^3.1.0",
+    "tram-one": "^7.0.0",
+    "xo": "^0.21.1"
+  },
+  "xo": {
+    "extends": [
+      "tram-one"
+    ],
+    "rules": {
+      "no-global-assign": ["off"],
+      "prefer-destructuring": ["off"],
+      "max-params": ["off"]
+    }
+  }
+}
