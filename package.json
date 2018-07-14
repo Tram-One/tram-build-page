@@ -43,9 +43,15 @@
       "tram-one"
     ],
     "rules": {
-      "no-global-assign": ["off"],
-      "prefer-destructuring": ["off"],
-      "max-params": ["off"]
+      "no-global-assign": [
+        "off"
+      ],
+      "prefer-destructuring": [
+        "off"
+      ],
+      "max-params": [
+        "off"
+      ]
     }
   }
 }

@@ -17,15 +17,15 @@ module.exports = (options) => {
 
   // setup window
 
-  const indexFile = fs.readFileSync(path.join(__dirname, indexPath)).toString()
+  const indexFile = fs.readFileSync(path.join(process.cwd(), indexPath)).toString()
   window = domino.createWindow(indexFile, cleanUrl)
   document = window.document
 
   // load Tram-One App
-  require(appPath)
+  require(path.join(process.cwd(), appPath))
 
   // write out file
-  if (outPath) fs.writeFileSync(path.join(__dirname, outPath), window.document.outerHTML)
+  if (outPath) fs.writeFileSync(path.join(process.cwd(), outPath), window.document.outerHTML)
   if (write) console.log(window.document.outerHTML)
   return window.document.outerHTML
 }
