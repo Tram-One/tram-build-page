@@ -1,7 +1,7 @@
 {
   "name": "tram-build-page",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "CLI and JS tool for building a single page off of a tram-one web application",
   "bin": "tram-build-page.js",
   "main": "build-page.js",
   "scripts": {
